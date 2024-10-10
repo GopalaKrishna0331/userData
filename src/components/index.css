@@ -3,11 +3,7 @@
   flex-direction: row;
 }
 
-.width {
-  margin-right: 20px;
-}
-
 .img {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
 }

@@ -2,9 +2,44 @@
   display: flex;
   flex-direction: row;
   font-family: 'Roboto';
-  list-style: none;
 }
 
 .length {
   margin-right: 45px;
+}
+
+th,
+tr {
+  border: 1px solid black;
+}
+
+th {
+  width: 5%;
+}
+tr {
+  width: 100%;
+}
+
+.pagination {
+  float: left;
+  padding: 16px 32px;
+  text-decoration: none;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+button {
+  color: black;
+  height: 60px;
+  width: 60px;
+  border: none;
+  background-color: white;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: dodgerblue;
 }

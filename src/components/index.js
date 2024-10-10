@@ -2,7 +2,7 @@ import './index.css'
 
 const User = props => {
   const {eachItem} = props
-  console.log(eachItem)
+
   const {
     address,
     age,
@@ -39,46 +39,49 @@ const User = props => {
   const {color, type} = hair
 
   return (
-    <li className="container">
-      <p className="width">{id}</p>
-      <p className="width">{username}</p>
-      <p className="width">{age}</p>
-      <p className="width">{birthDate}</p>
-      <p className="width">{email}</p>
-      <p className="width">{eyeColor}</p>
-      <p className="width">{firstName}</p>
-      <p className="width">{lastName}</p>
-      <p className="width">{gender}</p>
-      <p className="width">{height}</p>
-      <img src={image} alt="pic" className="width img" />
-      <p className="width">{macAddress}</p>
-      <p className="width">{maidenName}</p>
-      <p className="width">{password}</p>
-      <p className="width">{phone}</p>
-      <p className="width">{role}</p>
-      <p className="width">{ssn}</p>
-      <p className="width">{university}</p>
-      <p className="width">{userAgent}</p>
-      <p className="width">{weight}</p>
-      <p className="width">{bloodGroup}</p>
-      <p className="width">{ein}</p>
+    <tr>
+      <th>{id}</th>
+      <th>{username}</th>
+      <th>{age}</th>
+      <th>{birthDate}</th>
+      <th>{email}</th>
+      <th>{eyeColor}</th>
+      <th>{firstName}</th>
+      <th>{lastName}</th>
+      <th>{gender}</th>
+      <th>{height}</th>
+      <th>
+        <img src={image} alt="pic" />
+      </th>
 
-      <p className="width">
+      <th>{macAddress}</th>
+      <th>{maidenName}</th>
+      <th>{password}</th>
+      <th>{phone}</th>
+      <th>{role}</th>
+      <th>{ssn}</th>
+      <th>{university}</th>
+      <th>{userAgent}</th>
+      <th>{weight}</th>
+      <th>{bloodGroup}</th>
+      <th>{ein}</th>
+
+      <th>
         ({cardExpire}, {cardNumber}, {cardType}, {currency}, {iban})
-      </p>
-      <p className="width">
+      </th>
+      <th>
         ({city}, {country}, {postalCode}, {state}, {stateCode})
-      </p>
-      <p className="width">
+      </th>
+      <th>
         {department}, {name}, {title})
-      </p>
-      <p className="width">
+      </th>
+      <th>
         {coin}, {network}, {wallet}
-      </p>
-      <p className="width">
+      </th>
+      <th>
         {color}, {type}
-      </p>
-    </li>
+      </th>
+    </tr>
   )
 }
 
