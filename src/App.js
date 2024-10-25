@@ -47,8 +47,8 @@ class App extends Component {
 
   onClickPagination = event => {
     const {value} = this.state
-    const newValue = event.target.value
-    console.log(event.target.value)
+    const newValue = event.currenttarget.value
+    console.log(event.currenttarget.value)
     this.setState({value: newValue})
     this.updateData()
   }
